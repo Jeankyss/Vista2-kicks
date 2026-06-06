@@ -2,7 +2,7 @@ export const MOCK_PRODUCTS = [
     {
         "id": 1,
         "name": "Air Phantom 1",
-        "price": 120.00,
+        "price": 254900,
         "category": "men",
         "brand": "Nike",
         "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80",
@@ -11,7 +11,7 @@ export const MOCK_PRODUCTS = [
     {
         "id": 2,
         "name": "Ash Runner X",
-        "price": 95.50,
+        "price": 179900,
         "category": "women",
         "brand": "Adidas",
         "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80",
@@ -20,7 +20,7 @@ export const MOCK_PRODUCTS = [
     {
         "id": 3,
         "name": "Urban Glide",
-        "price": 110.00,
+        "price": 219900,
         "category": "men",
         "brand": "Puma",
         "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80",
@@ -29,7 +29,7 @@ export const MOCK_PRODUCTS = [
     {
         "id": 4,
         "name": "Course Classic",
-        "price": 85.00,
+        "price": 169700,
         "category": "women",
         "brand": "Nike",
         "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=500&q=80",

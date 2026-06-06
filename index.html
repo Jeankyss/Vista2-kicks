@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShoeZone | Premium Footwear Collective</title>
+    <title>SEGDAN | Sneakers Cali</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -11,18 +11,18 @@
     <header>
         <div class="container flex justify-between items-center">
             <a href="index.html" class="logo">
-                SHOE<span class="text-primary">ZONE</span>
+                SEG<span class="text-primary">DAN</span>
             </a>
             
             <div class="nav-actions flex gap-6 items-center">
                 <nav class="flex gap-6 items-center hidden md-flex" style="margin-right: 1rem; border-right: 1px solid var(--glass-border); padding-right: 2rem;">
-                    <a href="shop.html" class="auth-nav-link" style="background: transparent; border: none; padding: 0;">SHOP</a>
-                    <a href="about.html" class="auth-nav-link" style="background: transparent; border: none; padding: 0;">ABOUT</a>
+                    <a href="shop.html" class="auth-nav-link" style="background: transparent; border: none; padding: 0;">TIENDA</a>
+                    <a href="about.html" class="auth-nav-link" style="background: transparent; border: none; padding: 0;">SOBRE NOSOTROS</a>
                 </nav>
                 
                 <a href="login.html" id="auth-link">
                     <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                    Login
+                    INICIAR SESIÓN
                 </a>
                 <a href="cart.html" class="cart-icon">
                     <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
@@ -127,7 +127,7 @@
     <footer style="background: #000; padding: 60px 0 30px; border-top: 1px solid var(--glass-border);">
         <div class="container grid grid-cols-3 gap-8">
             <div>
-                <h3 class="logo" style="margin-bottom: 1.5rem;">SHOE<span class="text-primary">ZONE</span></h3>
+                <h3 class="logo" style="margin-bottom: 1.5rem;">SEG<span class="text-primary">DAN</span></h3>
                 <p class="text-muted" style="font-size: 0.9rem;">The ultimate destination for sneakerheads and performance enthusiasts alike.</p>
             </div>
             <div>
@@ -184,18 +184,22 @@
                 return `
                     <div class="product-card">
                         <div class="product-image-container" onclick="window.openBuySection(${p.id})">
-                            <img src="${p.image}" alt="${p.name}" style="cursor: pointer;">
-                            <div class="quick-add" onclick="event.stopPropagation(); window.quickViewModal(${p.id})">QUICK VIEW</div>
-                        </div>
-                        <div style="padding: 1.5rem;">
-                            <div class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">${p.brand}</div>
-                            <h3 style="font-size: 1.1rem; margin-bottom: 0.8rem; font-weight: 700;">
-                                <a href="javascript:void(0)" onclick="window.openBuySection(${p.id})">${p.name}</a>
-                            </h3>
-                            <div class="flex justify-between items-center">
-                                <span class="text-primary font-bold" style="font-size: 1.2rem;">$${p.price}</span>
-                                <button onclick="window.addToCart(${p.id})" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">QUICK ADD +</button>
-                            </div>
+    <img src="${p.image}" alt="${p.name}" style="cursor: pointer;">
+    <div class="quick-add" onclick="event.stopPropagation(); window.quickViewModal(${p.id})">QUICK VIEW</div>
+</div>
+<div style="padding: 1.5rem;">
+    <div class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">${p.brand}</div>
+    
+    <h3 style="font-size: 1.1rem; margin-bottom: 0.8rem; font-weight: 700;">
+        <a href="javascript:void(0)" onclick="window.openBuySection(${p.id})">${p.name}</a>
+    </h3>
+    
+    <div class="flex justify-between items-center">
+        <span class="text-primary font-bold" style="font-size: 1.2rem;">$ ${Number(p.price).toLocaleString('es-CO')} COP</span>
+        
+        <button onclick="window.addToCart(${p.id})" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">AÑADIR +</button>
+    </div>
+</div>
                         </div>
                     </div>
                 `;

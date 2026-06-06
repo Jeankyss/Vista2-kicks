@@ -22,7 +22,7 @@ function updateHeaderAuth() {
         userInfo.className = 'flex items-center gap-4';
         userInfo.innerHTML = `
             <div class="auth-nav-link">
-                <span style="opacity: 0.6; font-size: 0.7rem;">ELITE MEMBER</span>
+                <span style="opacity: 0.6; font-size: 0.7rem;"> BIENVENIDO </span>
                 <span style="color: white; font-weight: 800;">${user.first_name.toUpperCase()}</span>
             </div>
             <button id="logout-btn" class="dashboard-btn" style="padding: 0.6rem 1rem; background: rgba(239, 68, 68, 0.1); border-color: rgba(239, 68, 68, 0.2); color: var(--color-primary);">
@@ -51,7 +51,7 @@ function updateHeaderAuth() {
              login.id = 'auth-link';
              login.innerHTML = `
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path></svg>
-                Login
+                INICIAR SESIÓN
              `;
              
              if (cartLink) {
