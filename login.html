@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SEGDAN | Iniciar Sesión</title>
+    <link rel="shortcut icon" href="/assets/images/Logo/SEGDAN_LOGO.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         body { 
@@ -240,8 +241,8 @@
         <!-- Register -->
         <div class="form-container sign-up-container">
             <form id="register-form">
-                <h1 style="font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em;">JOIN THE <span class="text-primary">ELITE.</span></h1>
-                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 2rem;">Unlock exclusive drops and personalized recommendations.</p>
+                <h1 style="font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em;">UNETE A LA <span class="text-primary">ELITE.</span></h1>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 2rem;">Desbloquea lanzamientos exclusivos y recomendaciones personalizadas.</p>
                 
                 <div class="elite-input-group">
                     <input type="text" id="reg-name" required>
@@ -268,8 +269,8 @@
         <!-- Login -->
         <div class="form-container sign-in-container">
             <form id="login-form">
-                <h1 style="font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em;">BIENVENIDO <span class="text-primary">AGAIN.</span></h1>
-                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 2.5rem;">The collective missed your presence.</p>
+                <h1 style="font-weight: 800; margin-bottom: 0.5rem; letter-spacing: -0.02em;">BIENVENIDO <span class="text-primary">DE NUEVO.</span></h1>
+                <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-bottom: 2.5rem;">El colectivo extrañó tu presencia.</p>
                 
                 <div class="elite-input-group">
                     <input type="email" id="login-email" required>
@@ -296,13 +297,13 @@
         <div class="overlay-container">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
-                    <h2 style="font-weight: 800; font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1;">ACCESS <br><span class="text-primary">GRANTED?</span></h2>
-                    <p style="font-size: 0.9rem; margin-bottom: 3rem; color: #888; line-height: 1.6; max-width: 300px;">If you have already established your credentials, proceed to the terminal.</p>
+                    <h2 style="font-weight: 800; font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1;">YA ERES <br><span class="text-primary">RECLUTA?</span></h2>
+                    <p style="font-size: 0.9rem; margin-bottom: 3rem; color: #888; line-height: 1.6; max-width: 300px;">Si ya ha introducido sus credenciales, diríjase al inicio de sesión.</p>
                     <button class="btn btn-outline" id="signIn" style="width: 200px; border-color: var(--color-primary); color: var(--color-primary); font-weight: 800;">INICIAR SESIÓN</button>
                 </div>
                 <div class="overlay-panel overlay-right">
-                    <h2 style="font-weight: 800; font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1;">NEW <br><span class="text-primary">RECRUIT?</span></h2>
-                    <p style="font-size: 0.9rem; margin-bottom: 3rem; color: #888; line-height: 1.6; max-width: 300px;">Begin your journey into the most exclusive sneaker collective on the planet.</p>
+                    <h2 style="font-weight: 800; font-size: 2.2rem; margin-bottom: 1.5rem; line-height: 1;">NUEVO <br><span class="text-primary">RECLUTA?</span></h2>
+                    <p style="font-size: 0.9rem; margin-bottom: 3rem; color: #888; line-height: 1.6; max-width: 300px;">Comienza tu viaje al colectivo de zapatillas más exclusivo del planeta.</p>
                     <button class="btn btn-outline" id="signUp" style="width: 200px; border-color: var(--color-primary); color: var(--color-primary); font-weight: 800;">REGISTRARSE</button>
                 </div>
             </div>
@@ -338,16 +339,16 @@
             const btn = e.target.querySelector('button');
 
             btn.disabled = true;
-            btn.innerHTML = '<span style="letter-spacing: 0.5em; font-size: 0.6rem;">VALIDATING...</span>';
+            btn.innerHTML = '<span style="letter-spacing: 0.5em; font-size: 0.6rem;">...</span>';
 
             const res = await authService.login(email, pass);
             if (res.success) {
-                ui.showToast(`ACCESS GRANTED. Welcome, ${res.user.first_name}.`, 'success');
+                ui.showToast(`Inicio Exitoso, ${res.user.first_name}.`, 'Exitoso');
                 setTimeout(() => window.location.href = 'index.html', 1200);
             } else {
                 ui.showToast(res.message, 'error');
                 btn.disabled = false;
-                btn.innerText = 'AUTHENTICATE';
+                btn.innerText = 'INGRESAR';
             }
         };
 
@@ -363,18 +364,18 @@
             const lname = rest.join(' ') || '';
 
             btn.disabled = true;
-            btn.innerHTML = '<span style="letter-spacing: 0.5em; font-size: 0.6rem;">INITIALIZING...</span>';
+            btn.innerHTML = '<span style="letter-spacing: 0.5em; font-size: 0.6rem;">INICIANDO...</span>';
 
             const res = await authService.register({ first_name: fname, last_name: lname, email, password: pass });
             if (res.success) {
-                ui.showToast('REGISTRATION COMPLETE. Please authenticate.', 'success');
+                ui.showToast('Registro Completado', 'Exitoso');
                 signInBtn.click();
                 btn.disabled = false;
-                btn.innerText = 'CREATE ACCOUNT';
+                btn.innerText = 'CREAR CUENTA';
             } else {
                 ui.showToast(res.message, 'error');
                 btn.disabled = false;
-                btn.innerText = 'CREATE ACCOUNT';
+                btn.innerText = 'CREAR CUENTA';
             }
         };
     </script>

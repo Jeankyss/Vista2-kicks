@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shop Sneakers | ShoeZone Collective</title>
+    <title>SEGDAN | Tienda</title>
+    <link rel="shortcut icon" href="/assets/images/Logo/SEGDAN_LOGO.png" />
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
         .filter-group { margin-bottom: 2.5rem; }
@@ -47,16 +48,16 @@
             <aside style="min-width: 260px; position: sticky; top: 120px; height: fit-content;">
                 <div class="glass-card">
                     <div class="filter-group">
-                        <h3 class="filter-header">CATEGORIES</h3>
+                        <h3 class="filter-header">CATEGORIAS</h3>
                         <div id="category-list">
-                            <div class="filter-item active" onclick="filterBy('category', '', this)">All Sneakers</div>
+                            <div class="filter-item active" onclick="filterBy('category', '', this)">Todas las zapatillas</div>
                         </div>
                     </div>
                     
                     <div class="filter-group">
-                        <h3 class="filter-header">BRANDS</h3>
+                        <h3 class="filter-header">MARCAS</h3>
                         <div id="brand-list">
-                            <div class="filter-item active" onclick="filterBy('brand', '', this)">All Brands</div>
+                            <div class="filter-item active" onclick="filterBy('brand', '', this)">Todas las marcas</div>
                         </div>
                     </div>
                 </div>
@@ -65,12 +66,12 @@
             <!-- Product Grid -->
             <div style="flex: 1;">
                 <div class="flex justify-between items-center" style="margin-bottom: 2rem;">
-                    <h2 id="page-title" style="font-size: 1.8rem; font-weight: 800;">BROWSE <span class="text-primary">COLLECTION</span></h2>
-                    <div class="text-muted" style="font-size: 0.9rem;"><span id="product-total">0</span> sneakers found</div>
+                    <h2 id="page-title" style="font-size: 1.8rem; font-weight: 800;">EXPLORA LA <span class="text-primary">COLECCIÓN</span></h2>
+                    <div class="text-muted" style="font-size: 0.9rem;">Se encontraron <span id="product-total">0</span>  zapatillas</div>
                 </div>
                 
                 <div id="product-grid" class="grid grid-cols-3 gap-6">
-                    <p class="text-muted">Loading collection...</p>
+                    <p class="text-muted">Cargando colección...</p>
                 </div>
             </div>
         </div>
@@ -162,7 +163,7 @@
                 <div class="product-card">
                     <div class="product-image-container" onclick="window.openBuySection(${p.id})">
                         <img src="${p.image}" alt="${p.name}" style="cursor: pointer;">
-                        <div class="quick-add" onclick="event.stopPropagation(); window.quickViewModal(${p.id})">QUICK VIEW</div>
+                        <div class="quick-add" onclick="event.stopPropagation(); window.quickViewModal(${p.id})">VISTA PREVIA</div>
                     </div>
                     <div style="padding: 1.5rem;">
                         <div class="text-muted" style="font-size: 0.75rem; text-transform: uppercase; margin-bottom: 0.5rem; letter-spacing: 0.05em;">${p.brand}</div>
@@ -170,8 +171,8 @@
                             <a href="javascript:void(0)" onclick="window.openBuySection(${p.id})">${p.name}</a>
                         </h3>
                         <div class="flex justify-between items-center">
-                            <span class="text-primary font-bold" style="font-size: 1.2rem;">$ 297.000 COP</span>
-                            <button onclick="window.addToCart(${p.id})" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">QUICK ADD +</button>
+                            <span class="text-primary font-bold" style="font-size: 1.2rem;">$ ${Number(p.price).toLocaleString('es-CO')} </span>
+                            <button onclick="window.addToCart(${p.id})" class="btn btn-primary" style="padding: 0.4rem 0.8rem; font-size: 0.75rem;">AÑADIR +</button>
                         </div>
                     </div>
                 </div>
@@ -188,9 +189,9 @@
                     <div style="flex: 1;">
                         <span class="text-primary font-bold uppercase" style="font-size: 0.7rem;">${p.brand}</span>
                         <h2 style="font-size: 2rem; margin: 0.5rem 0 1rem; font-weight: 800;">${p.name}</h2>
-                        <div style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;" class="text-primary">$${p.price}</div>
+                        <div style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;" class="text-primary">$ ${Number(p.price).toLocaleString('es-CO')} COP</div>
                         <p class="text-muted" style="margin-bottom: 2rem; font-size: 0.9rem;">${p.description}</p>
-                        <button onclick="window.addToCart(${p.id}); ui.hideModal();" class="btn btn-primary" style="width: 100%;">ADD TO SHOPPING BAG</button>
+                        <button onclick="window.addToCart(${p.id}); ui.hideModal();" class="btn btn-primary" style="width: 100%;">AÑADIR AL CARRITO</button>
                     </div>
                 </div>
             `;
@@ -205,7 +206,7 @@
             
             quickViewArea.innerHTML = `
                 <div class="flex flex-col md-flex-row gap-12 items-center glass-card animate-fade-in" style="padding: 3rem; text-align: left; position: relative; z-index: 10;">
-                    <button onclick="window.closeQuickView()" class="btn-close-qv" style="position: absolute; top: 1.5rem; right: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface-light); border: 1px solid var(--glass-border); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 110; transition: var(--transition);">
+                    <button onclick="const recuadro = document.querySelector('.glass-card'); if(recuadro) { recuadro.style.display = 'none'; }" class="btn-close-qv" style="position: absolute; top: 1.5rem; right: 1.5rem; width: 44px; height: 44px; border-radius: 50%; background: var(--color-surface-light); border: 1px solid var(--glass-border); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; z-index: 110; transition: var(--transition);">
                         <svg style="pointer-events: none;" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
                     </button>
                     
@@ -216,19 +217,19 @@
                     <div style="flex: 1.2;">
                         <span class="text-primary font-bold letter-spacing uppercase" style="font-size: 0.8rem;">${p.brand}</span>
                         <h2 style="font-size: 3rem; font-weight: 800; margin: 0.5rem 0 1rem; line-height: 1.1;">${p.name}</h2>
-                        <div class="text-primary font-bold" style="font-size: 2rem; margin-bottom: 1.5rem;">$${p.price}</div>
+                        <div class="text-primary font-bold" style="font-size: 2rem; margin-bottom: 1.5rem;">$ ${Number(p.price).toLocaleString('es-CO')} COP</div>
                         <p class="text-muted" style="margin-bottom: 2.5rem; font-size: 1.1rem;">${p.description}</p>
                         
                         <div style="margin-bottom: 2.5rem;">
-                            <h4 style="font-size: 0.75rem; font-weight: 800; color: white; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">SELECT YOUR SIZE (US)</h4>
+                            <h4 style="font-size: 0.75rem; font-weight: 800; color: white; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">SELECCIONE SU TALLA (EUR)</h4>
                             <div class="flex gap-2 flex-wrap" id="qv-size-container">
-                                ${[7, 8, 9, 10, 11, 12].map(s => `
+                                ${[37, 38, 39, 40, 41, 42].map(s => `
                                     <div class="size-chip ${s === 9 ? 'active' : ''}" onclick="window.selectQVSize(this, '${s}')" style="padding: 0.8rem 1.2rem; border: 1px solid var(--glass-border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: var(--glass-bg); font-weight: 600;">${s}</div>
                                 `).join('')}
                             </div>
                         </div>
                         
-                        <button onclick="window.addToCartWithParams(${p.id})" class="btn btn-primary" style="width: 100%; height: 60px; font-size: 1.1rem; border-radius: 50px;">ADD TO SHOPPING BAG</button>
+                        <button onclick="window.addToCartWithParams(${p.id})" class="btn btn-primary" style="width: 100%; height: 60px; font-size: 1.1rem; border-radius: 50px;">AÑADIR AL CARRITO</button>
                     </div>
                 </div>
             `;
@@ -281,5 +282,17 @@
             }
         };
     </script>
+    <script>
+    // Script donde recarga la pagina al inicio de esta
+    window.addEventListener('load', () => {
+        window.scrollTo(0, 0);
+    });
+
+    // En algunos navegadores modernos se guarda el historial del scroll, 
+    // esta línea le dice al navegador que no intente restaurar la posición anterior.
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+</script>
 </body>
 </html>

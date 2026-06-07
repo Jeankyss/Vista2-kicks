@@ -84,14 +84,14 @@ class UIService {
         }, duration);
     }
 
-    confirm(message, title = 'Confirm Action') {
+    confirm(message, title = 'Confirmar acción') {
         return new Promise((resolve) => {
             const content = `
                 <h3 style="margin-bottom: 1rem; font-size: 1.5rem;">${title}</h3>
                 <p style="color: var(--color-text-muted); margin-bottom: 2rem;">${message}</p>
                 <div class="flex gap-4 justify-end">
-                    <button class="btn btn-outline" id="modal-cancel">Cancel</button>
-                    <button class="btn btn-primary" id="modal-confirm">Confirm</button>
+                    <button class="btn btn-outline" id="modal-cancel">Cancelar</button>
+                    <button class="btn btn-primary" id="modal-confirm">Confirmar</button>
                 </div>
             `;
             this.showModal(content);

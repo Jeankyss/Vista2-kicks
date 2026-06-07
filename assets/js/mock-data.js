@@ -1,38 +1,38 @@
 export const MOCK_PRODUCTS = [
     {
         "id": 1,
-        "name": "Air Phantom 1",
-        "price": 254900,
+        "name": "Nike Air Force 1 LV8",
+        "price": 754900,
         "category": "men",
         "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1549298916-b41d501d3772?auto=format&fit=crop&w=500&q=80",
+        "image": "/assets/images/Hombres/Nike_Air_Force_1_07_LV8.png",
         "description": "Sleek bluish-black design for the modern man. Features advanced cushioning."
     },
     {
         "id": 2,
-        "name": "Ash Runner X",
-        "price": 179900,
-        "category": "women",
-        "brand": "Adidas",
-        "image": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80",
+        "name": "Nike Dunk Low Retro Blue",
+        "price": 679900,
+        "category": "men",
+        "brand": "Nike",
+        "image": "/assets/images/Hombres/Nike_Dunk_Low_Retro_Blue.png",
         "description": "Lightweight runner with ash accents. Perfect for morning jogs."
     },
     {
         "id": 3,
-        "name": "Urban Glide",
-        "price": 219900,
+        "name": "Jordan 5 Retro Wolf Grey",
+        "price": 1129900,
         "category": "men",
-        "brand": "Puma",
-        "image": "https://images.unsplash.com/photo-1608231387042-66d1773070a5?auto=format&fit=crop&w=500&q=80",
+        "brand": "Jordan",
+        "image": "/assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.png",
         "description": "Street style meets comfort. Durable sole for city walking."
     },
     {
         "id": 4,
-        "name": "Course Classic",
-        "price": 169700,
-        "category": "women",
-        "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1543508282-6319a3e2621f?auto=format&fit=crop&w=500&q=80",
+        "name": "Air Jordan MVP 92",
+        "price": 814900,
+        "category": "men",
+        "brand": "Jordan",
+        "image": "/assets/images/Hombres/Air_Jordan_MVP_92.png",
         "description": "Timeless design for everyday wear. Soft leather upper."
     },
     {
@@ -94,7 +94,7 @@ export const MOCK_PRODUCTS = [
         "name": "Club C 85",
         "price": 75.00,
         "category": "women",
-        "brand": "Reebok",
+        "brand": "Vans",
         "image": "https://images.unsplash.com/photo-1584735175315-9d5816380698?auto=format&fit=crop&w=500&q=80",
         "description": "Court-inspired style. Soft leather feel."
     },
@@ -253,11 +253,11 @@ export const MOCK_PRODUCTS = [
     },
     {
         "id": 29,
-        "name": "Junior Glide",
-        "price": 55.00,
+        "name": "Jordan 4 Retro SP 30th Union Desert Moss",
+        "price": 674900,
         "category": "kids",
-        "brand": "Puma",
-        "image": "assets/images/children/rBVaEmJQeR2ATncAAAEX6dmsUQo415.jpg",
+        "brand": "Jordan",
+        "image": "assets/images/children/Jordan_4_Union_Desert_Moss.webp",
         "description": "Perfect balance of style and performance for young athletes."
     },
     {
@@ -298,74 +298,75 @@ export const MOCK_PRODUCTS = [
     },
     {
         "id": 34,
-        "name": "X-Sport Ladies",
-        "price": 120.00,
+        "name": "Jordan 3 Sail And Jade",
+        "price": 279900,
         "category": "women",
-        "brand": "X-Sport",
-        "image": "assets/images/ladies/x2VdpYWr_9ab37fdb0395418ea870917723560dc1.jpg",
+        "brand": "Jordan",
+        "image": "/assets/images/ladies/Jordan_3_Sail_and_Jade_Aura.png",
         "description": "Performance-driven sneakers for the modern woman on the move."
     },
     {
         "id": 35,
-        "name": "Rose Gold Aura",
-        "price": 115.00,
+        "name": "Air Jordan 4 Cozy Girl",
+        "price": 674900,
         "category": "women",
-        "brand": "Adidas",
-        "image": "https://images.unsplash.com/photo-1595341888016-a392ef81b7de?auto=format&fit=crop&w=500&q=80",
+        "brand": "Jordan",
+        "image": "/assets/images/ladies/Jordan_4_Cozy_Girl.png",
         "description": "Stunning rose gold accents meet premium comfort for a truly celestial feel."
     },
     {
         "id": 36,
-        "name": "Azure Bloom",
-        "price": 85.00,
+        "name": "Nike Revolution 8",
+        "price": 324900,
         "category": "women",
         "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1543163521-1bf539c55dd2?auto=format&fit=crop&w=500&q=80",
+        "image": "/assets/images/ladies/nike_revolution_8.jpg",
         "description": "Lightweight and breathable, featuring a subtle floral-inspired mesh."
     },
     {
         "id": 37,
-        "name": "Starlight Runner",
-        "price": 130.00,
+        "name": "Nike MC Trainer 3",
+        "price": 364900,
         "category": "women",
-        "brand": "Puma",
-        "image": "https://images.unsplash.com/photo-1512374382149-433a72b9a5a5?auto=format&fit=crop&w=500&q=80",
+        "brand": "Nike",
+        "image": "/assets/images/ladies/nike_mc_trainer_3.jpg",
         "description": "Reflective details that shine under city lights, designed for high-visibility runs."
     },
     {
         "id": 38,
-        "name": "Dino-Stomp",
-        "price": 45.00,
+        "name": "Jordan 1 Retro Off-White University Blue",
+        "price": 927900,
         "category": "kids",
-        "brand": "Vans",
-        "image": "https://images.unsplash.com/photo-1514989940723-e8e51635b782?auto=format&fit=crop&w=500&q=80",
+        "brand": "Jordan",
+        "image": "/assets/images/children/Jordan_1_University_Blue.webp",
         "description": "Fun dinosaur-themed patterns with easy-strap closures for the little ones."
     },
     {
         "id": 39,
-        "name": "Galaxy Glow",
-        "price": 60.00,
+        "name": "Jordan 1 Retro Off-White Chicago",
+        "price": 1084900,
         "category": "kids",
-        "brand": "Nike",
-        "image": "https://images.unsplash.com/photo-1626490601602-09419b4f738a?auto=format&fit=crop&w=500&q=80",
+        "brand": "Jordan",
+        "image": "/assets/images/children/Jordan_1_Chicago.webp",
         "description": "Space-inspired graphics that glow in the dark for out-of-this-world playtime."
     },
     {
         "id": 40,
-        "name": "Color Block Play",
-        "price": 35.00,
+        "name": "Jordan 4 Retro University Blue (GS)",
+        "price": 289900,
         "category": "kids",
-        "brand": "Puma",
-        "image": "https://images.unsplash.com/photo-1515347611652-48a6232da970?auto=format&fit=crop&w=500&q=80",
+        "brand": "Jordan",
+        "image": "/assets/images/children/jordan4.webp",
+        "image2": "/assets/images/children/jordan 4-2.webp",
         "description": "Vibrant color-blocking design that is as durable as it is fun."
     }
 ];
 
 export const MOCK_CATEGORIES = [
-    { "id": "men", "name": "Men's Sector", "image": "assets/images/cat_men.jpg" },
-    { "id": "women", "name": "Women's Sector", "image": "assets/images/ladies/21-6.jpg" },
-    { "id": "kids", "name": "Kids' Sector", "image": "assets/images/children/65e75caa45f75151ea76870e-juebong-toddler-shoes-baby-boys-girls.jpg" },
-    { "id": "sports", "name": "Sports", "image": "assets/images/cat_sports.jpg" }
+    { "id": "men", "name": "Hombre", "image": "/assets/images/Tendencias/Adidas_Logo_svg.webp" },
+    { "id": "women", "name": "Mujer", "image": "/assets/images/Tendencias/Air_Jordan_Tendencia.webp" },
+    { "id": "kids", "name": "Niños", "image": "/assets/images/Tendencias/Nike-Logo_Tendencia.webp" },
+    { "id": "sports", "name": "Deportes", "image": "assets/images/cat_sports.jpg" }
 ];
 
-export const MOCK_BRANDS = ["Nike", "Adidas", "Puma", "Reebok", "New Balance", "Vans"];
+export const MOCK_BRANDS = ["Nike", "Adidas", "Puma", "Jordan", "New Balance", "Vans"];

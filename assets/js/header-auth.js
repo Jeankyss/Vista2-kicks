@@ -37,7 +37,7 @@ function updateHeaderAuth() {
         }
 
         document.getElementById('logout-btn').onclick = async () => {
-            if (await ui.confirm('Are you sure you want to sign out of the elite collective?', 'Secure Logout')) {
+            if (await ui.confirm('¿Estás seguro de que quieres cerrar sesión?', 'Cierre de sesión')) {
                 authService.logout();
                 ui.showToast('Authentication session ended.', 'success');
                 setTimeout(() => window.location.reload(), 800);
