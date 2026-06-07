@@ -185,7 +185,7 @@ export const MOCK_PRODUCTS = [
         "price": 217900,
         "category": "men",
         "brand": "Adidas",
-        "image": "/assets/images/Hombres/Adidas_prueba_cafe.png",
+        "image": "./assets/images/Hombres/Adidas_prueba_cafe.png",
         "description": "Streamlined shape with Boost cushioning."
     },
     {
