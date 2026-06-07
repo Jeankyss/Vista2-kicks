@@ -23,7 +23,7 @@ export const MOCK_PRODUCTS = [
         "price": 1129900,
         "category": "men",
         "brand": "Jordan",
-        "image": "/assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.png",
+        "image": "/assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.webp",
         "description": "Street style meets comfort. Durable sole for city walking."
     },
     {
