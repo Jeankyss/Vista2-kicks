@@ -302,7 +302,7 @@ export const MOCK_PRODUCTS = [
         "price": 279900,
         "category": "women",
         "brand": "Jordan",
-        "image": "/assets/images/ladies/Jordan_3_Sail_and_Jade_Aura.png",
+        "image": "/assets/images/ladies/jordan3sailandjade.webp",
         "description": "Performance-driven sneakers for the modern woman on the move."
     },
     {
@@ -357,15 +357,14 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Jordan",
         "image": "/assets/images/children/jordan4.webp",
-        "image2": "/assets/images/children/jordan 4-2.webp",
         "description": "Vibrant color-blocking design that is as durable as it is fun."
     }
 ];
 
 export const MOCK_CATEGORIES = [
-    { "id": "men", "name": "Hombre", "image": "/assets/images/Tendencias/Adidas_Logo_svg.webp" },
-    { "id": "women", "name": "Mujer", "image": "/assets/images/Tendencias/Air_Jordan_Tendencia.webp" },
-    { "id": "kids", "name": "Niños", "image": "/assets/images/Tendencias/Nike-Logo_Tendencia.webp" },
+    { "id": "men", "name": "Hombre", "image": "/assets/images/Tendencias/adidaslogoinicial.webp" },
+    { "id": "women", "name": "Mujer", "image": "/assets/images/Tendencias/airjordanlogoinicial.webp" },
+    { "id": "kids", "name": "Niños", "image": "/assets/images/Tendencias/nikelogoinicial.webp" },
     { "id": "sports", "name": "Deportes", "image": "assets/images/cat_sports.jpg" }
 ];
 
