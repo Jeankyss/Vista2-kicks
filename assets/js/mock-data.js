@@ -5,7 +5,7 @@ export const MOCK_PRODUCTS = [
         "price": 754900,
         "category": "men",
         "brand": "Nike",
-        "image": "/assets/images/Hombres/Nike_Air_Force_1_07_LV8.png",
+        "image": "assets/images/Hombres/Nike_Air_Force_1_07_LV8.png",
         "description": "Sleek bluish-black design for the modern man. Features advanced cushioning."
     },
     {
@@ -14,7 +14,7 @@ export const MOCK_PRODUCTS = [
         "price": 679900,
         "category": "men",
         "brand": "Nike",
-        "image": "/assets/images/Hombres/Nike_Dunk_Low_Retro_Blue.png",
+        "image": "assets/images/Hombres/Nike_Dunk_Low_Retro_Blue.png",
         "description": "Lightweight runner with ash accents. Perfect for morning jogs."
     },
     {
@@ -23,7 +23,7 @@ export const MOCK_PRODUCTS = [
         "price": 1129900,
         "category": "men",
         "brand": "Jordan",
-        "image": "/assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.webp",
+        "image": "assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.webp",
         "description": "Street style meets comfort. Durable sole for city walking."
     },
     {
@@ -32,7 +32,7 @@ export const MOCK_PRODUCTS = [
         "price": 814900,
         "category": "men",
         "brand": "Jordan",
-        "image": "/assets/images/Hombres/Air_Jordan_MVP_92.png",
+        "image": "assets/images/Hombres/Air_Jordan_MVP_92.png",
         "description": "Timeless design for everyday wear. Soft leather upper."
     },
     {
@@ -185,7 +185,7 @@ export const MOCK_PRODUCTS = [
         "price": 217900,
         "category": "men",
         "brand": "Adidas",
-        "image": "./assets/images/Hombres/Adidas_prueba_cafe.png",
+        "image": "assets/images/Hombres/Adidas_prueba_cafe.png",
         "description": "Streamlined shape with Boost cushioning."
     },
     {
@@ -302,7 +302,7 @@ export const MOCK_PRODUCTS = [
         "price": 279900,
         "category": "women",
         "brand": "Jordan",
-        "image": "/assets/images/ladies/jordan3sailandjade.webp",
+        "image": "assets/images/ladies/jordan3sailandjade.webp",
         "description": "Performance-driven sneakers for the modern woman on the move."
     },
     {
@@ -311,7 +311,7 @@ export const MOCK_PRODUCTS = [
         "price": 674900,
         "category": "women",
         "brand": "Jordan",
-        "image": "/assets/images/ladies/Jordan_4_Cozy_Girl.png",
+        "image": "assets/images/ladies/Jordan_4_Cozy_Girl.png",
         "description": "Stunning rose gold accents meet premium comfort for a truly celestial feel."
     },
     {
@@ -320,7 +320,7 @@ export const MOCK_PRODUCTS = [
         "price": 324900,
         "category": "women",
         "brand": "Nike",
-        "image": "/assets/images/ladies/nike_revolution_8.jpg",
+        "image": "assets/images/ladies/nike_revolution_8.jpg",
         "description": "Lightweight and breathable, featuring a subtle floral-inspired mesh."
     },
     {
@@ -329,7 +329,7 @@ export const MOCK_PRODUCTS = [
         "price": 364900,
         "category": "women",
         "brand": "Nike",
-        "image": "/assets/images/ladies/nike_mc_trainer_3.jpg",
+        "image": "assets/images/ladies/nike_mc_trainer_3.jpg",
         "description": "Reflective details that shine under city lights, designed for high-visibility runs."
     },
     {
@@ -338,7 +338,7 @@ export const MOCK_PRODUCTS = [
         "price": 927900,
         "category": "kids",
         "brand": "Jordan",
-        "image": "/assets/images/children/Jordan_1_University_Blue.webp",
+        "image": "assets/images/children/Jordan_1_University_Blue.webp",
         "description": "Fun dinosaur-themed patterns with easy-strap closures for the little ones."
     },
     {
@@ -347,7 +347,7 @@ export const MOCK_PRODUCTS = [
         "price": 1084900,
         "category": "kids",
         "brand": "Jordan",
-        "image": "/assets/images/children/Jordan_1_Chicago.webp",
+        "image": "assets/images/children/Jordan_1_Chicago.webp",
         "description": "Space-inspired graphics that glow in the dark for out-of-this-world playtime."
     },
     {
@@ -356,15 +356,15 @@ export const MOCK_PRODUCTS = [
         "price": 289900,
         "category": "kids",
         "brand": "Jordan",
-        "image": "/assets/images/children/jordan4.webp",
+        "image": "assets/images/children/jordan4.webp",
         "description": "Vibrant color-blocking design that is as durable as it is fun."
     }
 ];
 
 export const MOCK_CATEGORIES = [
-    { "id": "men", "name": "Hombre", "image": "/assets/images/Tendencias/adidaslogoinicial.webp" },
-    { "id": "women", "name": "Mujer", "image": "/assets/images/Tendencias/airjordanlogoinicial.webp" },
-    { "id": "kids", "name": "Niños", "image": "/assets/images/Tendencias/nikelogoinicial.webp" },
+    { "id": "men", "name": "Hombre", "image": "assets/images/Tendencias/adidaslogoinicial.webp" },
+    { "id": "women", "name": "Mujer", "image": "assets/images/Tendencias/airjordanlogoinicial.webp" },
+    { "id": "kids", "name": "Niños", "image": "assets/images/Tendencias/nikelogoinicial.webp" },
     { "id": "sports", "name": "Deportes", "image": "assets/images/cat_sports.jpg" }
 ];
 
