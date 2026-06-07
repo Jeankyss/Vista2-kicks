@@ -181,11 +181,11 @@ export const MOCK_PRODUCTS = [
     },
     {
         "id": 21,
-        "name": "NMD_R1",
-        "price": 140.00,
+        "name": "ADIDAS PRUEBA",
+        "price": 217900,
         "category": "men",
         "brand": "Adidas",
-        "image": "https://images.unsplash.com/photo-1582588678413-dbf45f4823e9?auto=format&fit=crop&w=500&q=80",
+        "image": "/assets/images/Hombres/Adidas_prueba_cafe.png",
         "description": "Streamlined shape with Boost cushioning."
     },
     {
