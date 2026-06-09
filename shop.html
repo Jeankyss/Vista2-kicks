@@ -224,7 +224,7 @@
                             <h4 style="font-size: 0.75rem; font-weight: 800; color: white; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">SELECCIONE SU TALLA (EUR)</h4>
                             <div class="flex gap-2 flex-wrap" id="qv-size-container">
                                 ${[37, 38, 39, 40, 41, 42].map(s => `
-                                    <div class="size-chip ${s === 9 ? 'active' : ''}" onclick="window.selectQVSize(this, '${s}')" style="padding: 0.8rem 1.2rem; border: 1px solid var(--glass-border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: var(--glass-bg); font-weight: 600;">${s}</div>
+                                    <div class="size-chip ${s === 37 ? 'active' : ''}" onclick="window.selectQVSize(this, '${s}')" style="padding: 0.8rem 1.2rem; border: 1px solid var(--glass-border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: var(--glass-bg); font-weight: 600;">${s}</div>
                                 `).join('')}
                             </div>
                         </div>
@@ -236,7 +236,7 @@
 
             quickViewArea.classList.remove('hidden');
             window.scrollTo({ top: 0, behavior: 'smooth' });
-            window.currentSelectedSize = '9';
+            window.currentSelectedSize = '37';
         };
 
         window.selectQVSize = (el, size) => {
@@ -261,8 +261,8 @@
             const { cartService } = await import('./assets/js/cart-service.js');
             const p = allProducts.find(item => item.id === id);
             if(p) {
-                cartService.addItem(p, window.currentSelectedSize || '9');
-                ui.showToast(`${p.name} (Size ${window.currentSelectedSize || '9'}) added to cart!`, 'success');
+                cartService.addItem(p, window.currentSelectedSize || '37');
+                ui.showToast(`${p.name} (Size ${window.currentSelectedSize || '37'}) Añadido al carrito!`, 'success');
             }
         };
 
@@ -278,7 +278,7 @@
             const p = allProducts.find(item => item.id === id);
             if(p) {
                 cartService.addItem(p); // Uses default size 9
-                ui.showToast(`Successfully added ${p.name} to cart.`, 'success');
+                ui.showToast(`Se añadió ${p.name} exitosamente a tu carrito.`, 'success');
             }
         };
     </script>

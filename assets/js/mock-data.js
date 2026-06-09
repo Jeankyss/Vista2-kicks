@@ -6,7 +6,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Nike_Air_Force_1_07_LV8.png",
-        "description": "Sleek bluish-black design for the modern man. Features advanced cushioning."
+        "description": "Diseño elegante en gris claro para el hombre moderno."
     },
     {
         "id": 2,
@@ -15,7 +15,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Nike_Dunk_Low_Retro_Blue.png",
-        "description": "Lightweight runner with ash accents. Perfect for morning jogs."
+        "description": "Zapatillas ligeras para correr con detalles en color ceniza. Perfectas para correr por las mañanas."
     },
     {
         "id": 3,
@@ -24,7 +24,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Jordan",
         "image": "assets/images/Hombres/Jordan_5_Retro_Wolf_Grey.webp",
-        "description": "Street style meets comfort. Durable sole for city walking."
+        "description": "El estilo urbano se une a la comodidad. Suela resistente para caminar por la ciudad."
     },
     {
         "id": 4,
@@ -33,7 +33,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Jordan",
         "image": "assets/images/Hombres/Air_Jordan_MVP_92.png",
-        "description": "Timeless design for everyday wear. Soft leather upper."
+        "description": "Diseño atemporal para uso diario. Exterior de piel suave."
     },
     {
         "id": 5,
@@ -42,7 +42,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Puma",
         "image": "assets/images/Hombres/Puma_Hali_1_Smoke.png",
-        "description": "High performance gear. Shock absorption technology included."
+        "description": "Equipamiento de alto rendimiento. Incluye tecnología de absorción de impactos."
     },
     {
         "id": 6,
@@ -51,7 +51,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Puma",
         "image": "assets/images/Hombres/Puma_SkyJet_Prisco.png",
-        "description": "Classic skate shoe for the little ones. Durable canvas."
+        "description": "Zapatillas urbanas clásicas. Porta de lona y materiales resistentes."
     },
     {
         "id": 7,
@@ -60,7 +60,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Nike_Air_Force_1_07_Premium.png",
-        "description": "The legend lives on. Classic white on white."
+        "description": "La leyenda continúa. Clásico blanco sobre negro premium."
     },
     {
         "id": 8,
@@ -69,7 +69,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Adidas",
         "image": "assets/images/Hombres/Adidas_Control_5_Negro.png",
-        "description": "Energy return like no other. Primeknit upper."
+        "description": "Retorno de energía sin igual. Parte superior muy compacta."
     },
     {
         "id": 9,
@@ -78,7 +78,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Jordan",
         "image": "assets/images/ladies/Air_jordan_1_mid.jpg",
-        "description": "No laces, no problems. Iconic checkerboard pattern."
+        "description": "Muy urbano, sin problemas. El icónico estampado de Air Jordan High."
     },
     {
         "id": 10,
@@ -87,7 +87,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Jordan",
         "image": "assets/images/ladies/Air_jordan_11_retro_pearl.png",
-        "description": "The most New Balance shoe ever. Versatile and reliable."
+        "description": "Las zapatillas jordan más auténticas de la historia. Versátiles y fiables."
     },
     {
         "id": 11,
@@ -96,7 +96,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Adidas",
         "image": "assets/images/ladies/Adidas_RESPONSE_RUNNER_2.png",
-        "description": "Court-inspired style. Soft leather feel."
+        "description": "Estilo inspirado en las pistas de atletismo. Tacto de piel suave."
     },
     {
         "id": 12,
@@ -105,7 +105,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Puma",
         "image": "assets/images/ladies/Puma_Fade_Afterlight.png",
-        "description": "Built for quick cuts on the court. Secure fit."
+        "description": "Diseñado para cambios de dirección rápidos en la cancha. Ajuste seguro."
     },
     {
         "id": 13,
@@ -114,7 +114,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Adidas",
         "image": "assets/images/Hombres/Adidas_SAMBA_XLG_Verde.png",
-        "description": "Minimalist tennis style. 50% recycled materials."
+        "description": "Estilo minimalista de tenis. 50% de materiales reciclados."
     },
     {
         "id": 14,
@@ -123,16 +123,16 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Puma",
         "image": "assets/images/ladies/Puma_Suede_XL.png",
-        "description": "The icon that started it all. Smooth suede."
+        "description": "El icono que lo inició todo. Gamuza suave."
     },
     {
         "id": 36,
-        "name": "Nike Revolution 8",
+        "name": "Nike Air Max 90 Futura",
         "price": 324900,
         "category": "women",
         "brand": "Nike",
-        "image": "assets/images/ladies/nike_revolution_8.jpg",
-        "description": "Lightweight and breathable, featuring a subtle floral-inspired mesh."
+        "image": "assets/images/ladies/Nike_Air_Max_90_Futura.png",
+        "description": "Ligera y transpirable, con una sutil malla de inspiración floral."
     },
     {
         "id": 16,
@@ -141,7 +141,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Air_Nike_1_Retro_Low_OG.png",
-        "description": "Retro style with modern comfort. Visible Air unit."
+        "description": "Estilo retro con confort moderno. Unidad de aire visible."
     },
     {
         "id": 17,
@@ -150,7 +150,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Adidas",
         "image": "assets/images/ladies/Adidas_Campus_00s_Cafe.png",
-        "description": "The shell toe icon. Leather upper."
+        "description": "El icónico modelo con puntera reforzada. Parte superior de piel."
     },
     {
         "id": 18,
@@ -159,7 +159,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Puma",
         "image": "assets/images/Hombres/Puma-Suede-XL.png",
-        "description": "Bold puzzle design. Bulky silhouette."
+        "description": "Diseño de rompecabezas llamativo. Silueta voluminosa."
     },
     {
         "id": 19,
@@ -168,7 +168,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Nike",
         "image": "assets/images/ladies/Air_Nike_1_low_pink.jpg",
-        "description": "Your workhorse with wings. Responsive foam."
+        "description": "Los deslumbrantes detalles en rosa se combinan con una comodidad superior para una sensación verdaderamente celestial."
     },
     {
         "id": 20,
@@ -177,7 +177,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Nike_dunk_low_Sail_Black.png",
-        "description": "Legendary high top. Sturdy suede and canvas."
+        "description": "Demasiado estilo en la combinación dunk, espuma reactiva"
     },
     {
         "id": 21,
@@ -186,16 +186,16 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Adidas",
         "image": "assets/images/Hombres/Adidas_Courtblock_Brown.png",
-        "description": "Streamlined shape with Boost cushioning."
+        "description": "Estilo de la Costa Oeste. Suela apilada."
     },
     {
         "id": 22,
-        "name": "Puma GV Special",
+        "name": "Puma GV Special White",
         "price": 319900,
         "category": "women",
         "brand": "Puma",
         "image": "assets/images/ladies/Puma_GV_Special.png", 
-        "description": "West Coast vibes. Stacked sole."
+        "description": "Diseño aerodinámico con amortiguación Boost."
     },
     {
         "id": 23,
@@ -204,7 +204,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Nike",
         "image": "assets/images/ladies/Nike_air_max_2k_rose.png",
-        "description": "Flexible outsole for natural movement."
+        "description": "Suela flexible para un movimiento natural."
     },
     {
         "id": 24,
@@ -213,16 +213,16 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Adidas",
         "image": "assets/images/ladies/Adidas_Ligra_8_Pink.png",
-        "description": "The ultimate suede sneaker. Retro vibes."
+        "description": "El equilibrio perfecto entre estilo y rendimiento para jóvenes atletas."
     },
     {
         "id": 37,
-        "name": "Nike MC Trainer 3",
+        "name": "Nike Court Legacy Lift",
         "price": 364900,
         "category": "women",
         "brand": "Nike",
-        "image": "assets/images/ladies/nike_mc_trainer_3.jpg",
-        "description": "Reflective details that shine under city lights, designed for high-visibility runs."
+        "image": "assets/images/ladies/Nike_Court_Legacy_Lift_.png",
+        "description": "Detalles reflectantes que brillan bajo las luces de la ciudad, diseñados para carreras de alta visibilidad."
     },
     {
         "id": 27,
@@ -231,16 +231,16 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Nike",
         "image": "assets/images/ladies/Nike_Court_Vision_Low.png",
-        "description": "Lightweight athletic shoes designed for active women who love to run."
+        "description": "Zapatillas deportivas ligeras diseñadas para mujeres activas a las que les encanta el estilo"
     },
     {
         "id": 28,
-        "name": "Puma Speedcat Python",
+        "name": "Puma Speedcat Garnet Glow",
         "price": 294900,
         "category": "women",
         "brand": "Puma",
         "image": "assets/images/ladies/Puma_Speedcat_Python.png",
-        "description": "Durable and stylish sneakers for every mini explorer."
+        "description": "Zapatillas resistentes y con estilo para todas las mujeres."
     },
     {
         "id": 35,
@@ -249,7 +249,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Jordan",
         "image": "assets/images/ladies/Jordan_4_Cozy_Girl.png",
-        "description": "Stunning rose gold accents meet premium comfort for a truly celestial feel."
+        "description": "Zapatillas altas legendarias. Confeccionadas en material de lona resistentes."
     },
     {
         "id": 30,
@@ -258,7 +258,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Puma",
         "image": "assets/images/ladies/Puma_Fade_Blue.png",
-        "description": "Stylish slip-on canvas sneakers for ultimate casual comfort."
+        "description": "Zapatillas de lona con estilo para una comodidad informal máxima."
     },
     {
         "id": 31,
@@ -267,16 +267,16 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Jordan",
         "image": "assets/images/Hombres/Air_Jordan_3_Retro_Orange.jpg",
-        "description": "Premium comfort meets high-end fashion in these elegant striders."
+        "description": "La zapatilla de ante definitiva. Estilo retro."
     },
     {
         "id": 32,
-        "name": "Jordan 4 Retro Fight Club",
+        "name": "Jordan Trunner Flow",
         "price": 389900,
         "category": "men",
         "brand": "Jordan",
-        "image": "assets/images/Hombres/Jordan_4_Retro_Fight_Club.png",
-        "description": "Sleek and responsive running shoes tailored for women."
+        "image": "assets/images/Hombres/Jordan_Trunner_Flow.png",
+        "description": "Zapatillas de running elegantes y con gran capacidad de respuesta, diseñadas específicamente para hombres."
     },
     {
         "id": 33,
@@ -285,7 +285,7 @@ export const MOCK_PRODUCTS = [
         "category": "men",
         "brand": "Nike",
         "image": "assets/images/Hombres/Nike_Free_Metcon_6_White.png",
-        "description": "Effortless movement and sophisticated design for everyday wear."
+        "description": "Movimiento fluido y diseño sofisticado para el uso diario."
     },
     {
         "id": 34,
@@ -294,7 +294,7 @@ export const MOCK_PRODUCTS = [
         "category": "women",
         "brand": "Jordan",
         "image": "assets/images/ladies/jordan3sailandjade.webp",
-        "description": "Performance-driven sneakers for the modern woman on the move."
+        "description": "Zapatillas deportivas de alto rendimiento para la mujer moderna y activa."
     },
     {
         "id": 29,
@@ -303,7 +303,7 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Jordan",
         "image": "assets/images/children/Jordan_4_Union_Desert_Moss.webp",
-        "description": "Perfect balance of style and performance for young athletes."
+        "description": "El equilibrio perfecto entre estilo y rendimiento para jóvenes con mucho flow."
     },
     {
         "id": 15,
@@ -312,7 +312,7 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Nike",
         "image": "assets/images/children/Air_Force_1_High_Mid_White.webp",
-        "description": "The one and only. High top canvas."
+        "description": "La única e inigualable. Air force de caña alta."
     },
     {
         "id": 25,
@@ -321,7 +321,7 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Nike",
         "image": "assets/images/children/Nike_SB_Dunk_Low_Verdy_Visty.webp",
-        "description": "The original Nike style. Simple and low profile."
+        "description": "El estilo original de Nike. Sencillo y discreto."
     },
     {
         "id": 38,
@@ -330,7 +330,7 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Jordan",
         "image": "assets/images/children/Jordan_1_University_Blue.webp",
-        "description": "Fun dinosaur-themed patterns with easy-strap closures for the little ones."
+        "description": "Diseño con temática de cielo y cordones esteticos muy comodas de usar."
     },
     {
         "id": 39,
@@ -339,7 +339,7 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Jordan",
         "image": "assets/images/children/Jordan_1_Chicago.webp",
-        "description": "Space-inspired graphics that glow in the dark for out-of-this-world playtime."
+        "description": "Diseño industrial con materiales expuestos, detalles tipográficos y el característico precinto rojo."
     },
     {
         "id": 40,
@@ -348,15 +348,14 @@ export const MOCK_PRODUCTS = [
         "category": "kids",
         "brand": "Jordan",
         "image": "assets/images/children/jordan4.webp",
-        "description": "Vibrant color-blocking design that is as durable as it is fun."
+        "description": "Estilo urbano en su máxima expresión. Destacan por su vibrante diseño de gamuza azul y su silueta retro premium."
     }
 ];
 
 export const MOCK_CATEGORIES = [
     { "id": "men", "name": "Hombre", "image": "assets/images/Tendencias/adidaslogoinicial.webp" },
     { "id": "women", "name": "Mujer", "image": "assets/images/Tendencias/airjordanlogoinicial.webp" },
-    { "id": "kids", "name": "Segunda Mano", "image": "assets/images/Tendencias/nikelogoinicial.webp" },
-    { "id": "sports", "name": "Deportes", "image": "assets/images/cat_sports.jpg" }
+    { "id": "kids", "name": "Unisex", "image": "assets/images/Tendencias/nikelogoinicial.webp" },
 ];
 
-export const MOCK_BRANDS = ["Nike", "Adidas", "Puma", "Jordan", "Segunda Mano"];
+export const MOCK_BRANDS = ["Nike", "Adidas", "Puma", "Jordan"];

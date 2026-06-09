@@ -40,7 +40,7 @@
         
         <div id="hero-default" class="container animate-fade-in">
     <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-        <span class="text-primary uppercase letter-spacing font-bold" style="font-size: 1rem; margin-bottom: 1rem; display: block;">NUEVA COLECCION 2026</span>
+        <span class="text-primary uppercase letter-spacing font-bold" style="font-size: 1.5rem; margin-bottom: 1rem; display: block;">NUEVA COLECCION 2026</span>
         <h1 class="hero-title" style="font-size: 4.5rem; line-height: 1.1; margin-bottom: 1.5rem; font-weight: 800;">
             ADENTRATE A LA <br><span class="text-primary">COLECCION DE ELITE.</span>
         </h1>
@@ -153,7 +153,7 @@
         </svg>
     </a>
 
-    <a href="TU_LINK_DE_TIKTOK" target="_blank" rel="noopener noreferrer" style="color: #ef4444; transition: transform 0.2s ease; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
+    <a href="https://www.tiktok.com/@meladostore3333?_r=1&_t=ZS-973H9I6Ur9Z" target="_blank" rel="noopener noreferrer" style="color: #ef4444; transition: transform 0.2s ease; display: inline-block;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">
         <svg xmlns="http://www.w3.org/2000/svg" width="26" height="28" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd" viewBox="0 0 449.45 515.38" fill="currentColor">
             <path fill-rule="nonzero" d="M382.31 103.3c-27.76-18.1-47.79-47.07-54.04-80.82-1.35-7.29-2.1-14.8-2.1-22.48h-88.6l-.15 355.09c-1.48 39.77-34.21 71.68-74.33 71.68-12.47 0-24.21-3.11-34.55-8.56-23.71-12.47-39.94-37.32-39.94-65.91 0-41.07 33.42-74.49 74.48-74.49 7.67 0 15.02 1.27 21.97 3.44V190.8c-7.2-.99-14.51-1.59-21.97-1.59C73.16 189.21 0 262.36 0 352.3c0 55.17 27.56 104 69.63 133.52 26.48 18.61 58.71 29.56 93.46 29.56 89.93 0 163.08-73.16 163.08-163.08V172.23c34.75 24.94 77.33 39.64 123.28 39.64v-88.61c-24.75 0-47.8-7.35-67.14-19.96z"></path>
         </svg>
@@ -202,7 +202,7 @@
              if(newsForm) {
                  newsForm.onsubmit = (e) => {
                      e.preventDefault();
-                     ui.showToast('Successfully joined the newsletter!', 'success');
+                     ui.showToast('¡Te has suscrito correctamente al boletín informativo!', 'success');
                      newsForm.reset();
                  };
              }
@@ -294,7 +294,7 @@
                     </div>
                     
                     <div style="flex: 1.2;">
-                        <span class="text-primary font-bold letter-spacing uppercase" style="font-size: 0.8rem;">${p.brand}</span>
+                        <span class="text-primary font-bold letter-spacing uppercase" style="font-size: 1rem;">${p.brand}</span>
                         <h2 style="font-size: 3rem; font-weight: 800; margin: 0.5rem 0 1rem; line-height: 1.1;">${p.name}</h2>
                         <div class="text-primary font-bold" style="font-size: 2rem; margin-bottom: 1.5rem;">$ ${Number(p.price).toLocaleString('es-CO')} COP</div>
                         <p class="text-muted" style="margin-bottom: 2.5rem; font-size: 1.1rem;">${p.description}</p>
@@ -303,7 +303,7 @@
                             <h4 style="font-size: 0.75rem; font-weight: 800; color: white; margin-bottom: 1rem; text-transform: uppercase; letter-spacing: 0.1em;">SELECCIONE SU TALLA (EUR)</h4>
                             <div class="flex gap-2 flex-wrap" id="qv-size-container">
                                 ${[37, 38, 39, 40, 41, 42].map(s => `
-                                    <div class="size-chip ${s === 9 ? 'active' : ''}" onclick="window.selectQVSize(this, '${s}')" style="padding: 0.8rem 1.2rem; border: 1px solid var(--glass-border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: var(--glass-bg); font-weight: 600;">${s}</div>
+                                    <div class="size-chip ${s === 37 ? 'active' : ''}" onclick="window.selectQVSize(this, '${s}')" style="padding: 0.8rem 1.2rem; border: 1px solid var(--glass-border); border-radius: var(--radius-md); cursor: pointer; transition: var(--transition); background: var(--glass-bg); font-weight: 600;">${s}</div>
                                 `).join('')}
                             </div>
                         </div>
@@ -317,7 +317,7 @@
             quickViewArea.classList.remove('hidden');
             // Sino se puede, cambiar a top: 0 y quitar el block: 'start'
             window.scrollTo({ top: 900, block:'start', behavior: 'smooth' });
-            window.currentSelectedSize = '9';
+            window.currentSelectedSize = '37';
         };
 
         window.selectQVSize = (el, size) => {
@@ -344,8 +344,8 @@
             const { cartService } = await import('./assets/js/cart-service.js');
             const p = window.allProducts.find(item => item.id === id);
             if(p) {
-                cartService.addItem(p, window.currentSelectedSize || '9');
-                ui.showToast(`${p.name} (Size ${window.currentSelectedSize || '9'}) added to cart!`, 'success');
+                cartService.addItem(p, window.currentSelectedSize || '37');
+                ui.showToast(`${p.name} (Size ${window.currentSelectedSize || '37'}) añadido al carrito!`, 'success');
             }
         };
 
@@ -357,7 +357,7 @@
                         <img src="${p.image}" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div style="flex: 1;">
-                        <span class="text-primary font-bold uppercase" style="font-size: 0.7rem;">${p.brand}</span>
+                        <span class="text-primary font-bold uppercase" style="font-size: 0.9rem;">${p.brand}</span>
                         <h2 style="font-size: 2rem; margin: 0.5rem 0 1rem; font-weight: 800;">${p.name}</h2>
                         <div style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;" class="text-primary">$ ${Number(p.price).toLocaleString('es-CO')} COP</div>
                         <p class="text-muted" style="margin-bottom: 2rem; font-size: 0.9rem;">${p.description}</p>
@@ -380,7 +380,7 @@
             const product = window.allProducts.find(p => p.id === id);
             if(product) {
                 cartService.addItem(product); // Uses default size 9
-                ui.showToast(`${product.name} added to cart!`, 'success');
+                ui.showToast(`${product.name} añadido al carrito!`, 'success');
             }
         };
     </script>

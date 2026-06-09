@@ -26,14 +26,14 @@ export const authService = {
             let users = JSON.parse(localStorage.getItem(USERS_KEY) || '[]');
             
             if (users.find(u => u.email === userData.email)) {
-                return { success: false, message: 'Email already registered (Local)' };
+                return { success: false, message: 'Correo electrónico ya registrado' };
             }
 
             // Simple hash not possible in frontend JS securely without libs, storing plaintext for Mock demo
             users.push(userData); 
             localStorage.setItem(USERS_KEY, JSON.stringify(users));
             
-            return { success: true, message: 'Registration successful (Local)' };
+            return { success: true, message: 'Registro exitoso' };
         }
     },
 
@@ -69,7 +69,7 @@ export const authService = {
                 this.setSession(safeUser);
                 return { success: true, user: safeUser };
             } else {
-                return { success: false, message: 'Invalid credentials (Local)' };
+                return { success: false, message: 'Credenciales no válidas!' };
             }
         }
     },
